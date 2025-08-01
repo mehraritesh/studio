@@ -10,7 +10,7 @@ const projectsData = [
     techStack: ['Kotlin', 'WebSocket', 'Firebase', 'Google Play Store'],
     githubUrl: 'https://github.com',
     demoUrl: 'https://play.google.com/store/apps/details?id=com.sofmen.trackerapp&pcampaignid=web_share',
-    icon: <Smartphone className="h-10 w-10 text-accent" />,
+    icon: <Smartphone className="h-10 w-10 text-accent animate-float" />,
   },
   {
     title: 'The Mandarin Show – Language Learning App',
@@ -18,7 +18,7 @@ const projectsData = [
     techStack: ['React Native', 'Google/Apple Login', 'ExoPlayer', 'In-App Purchases'],
     githubUrl: 'https://github.com',
     demoUrl: 'https://play.google.com/store/apps/details?id=com.mandarinn.themandarinshow&pcampaignid=web_share',
-    icon: <BookOpen className="h-10 w-10 text-accent" />,
+    icon: <BookOpen className="h-10 w-10 text-accent animate-float" style={{ animationDelay: '0.5s' }} />,
   },
   {
     title: 'Curbside Movers – Customer & Driver Apps',
@@ -26,15 +26,15 @@ const projectsData = [
     techStack: ['React Native', 'React Native Web', 'Twilio', 'Stripe', 'Google Maps API', 'Firebase'],
     githubUrl: 'https://github.com',
     demoUrl: 'https://play.google.com/store/apps/details?id=com.curbsidemovers.customer&pcampaignid=web_share',
-    icon: <Truck className="h-10 w-10 text-accent" />,
+    icon: <Truck className="h-10 w-10 text-accent animate-float" style={{ animationDelay: '1s' }} />,
   },
 ];
 
 export function ProjectsSection() {
   return (
     <section id="projects" className="w-full py-12 md:py-24 lg:py-32">
-      <div className="container mx-auto px-4 md:px-6 animate-fade-in-up">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+      <div className="container mx-auto px-4 md:px-6">
+        <div className="flex flex-col items-center justify-center space-y-4 text-center animate-fade-in-up">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-primary">Featured Projects</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
@@ -44,7 +44,7 @@ export function ProjectsSection() {
         </div>
         <div className="grid gap-8 py-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projectsData.map((project, index) => (
-            <Card key={index} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in" style={{ animationDelay: `${index * 200}ms` }}>
+            <Card key={index} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in-up" style={{ animationDelay: `${index * 200}ms` }}>
               <CardContent className="flex flex-col flex-1 p-6">
                 <div className="mb-4">{project.icon}</div>
                 <CardTitle className="mb-2 font-headline">{project.title}</CardTitle>
