@@ -21,18 +21,15 @@ export function AboutSection() {
             </div>
           </div>
           <div className="flex items-center justify-center animate-float">
-            <Card className="overflow-hidden rounded-full w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 shadow-lg">
-              <CardContent className="p-0">
-                <Image
-                  src="https://placehold.co/400x400.png"
-                  alt="Profile Picture"
-                  width={400}
-                  height={400}
-                  className="h-full w-full object-cover"
-                  data-ai-hint="professional headshot"
-                />
-              </CardContent>
-            </Card>
+            <div className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
+              <Image
+                src="/images/profile.png"
+                alt="Profile Picture"
+                layout="fill"
+                className="rounded-full object-cover shadow-lg"
+                data-ai-hint="professional headshot"
+              />
+            </div>
           </div>
         </div>
       </div>

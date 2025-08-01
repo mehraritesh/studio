@@ -11,7 +11,7 @@ const projectsData = [
     techStack: ['Kotlin', 'WebSocket', 'Firebase', 'Google Play Store'],
     githubUrl: 'https://github.com',
     demoUrl: 'https://play.google.com/store/apps/details?id=com.sofmen.trackerapp&pcampaignid=web_share',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/images/project-tracker.png',
     imageHint: 'mobile tracking app',
   },
   {
@@ -20,7 +20,7 @@ const projectsData = [
     techStack: ['React Native', 'Google/Apple Login', 'ExoPlayer', 'In-App Purchases'],
     githubUrl: 'https://github.com',
     demoUrl: 'https://play.google.com/store/apps/details?id=com.mandarinn.themandarinshow&pcampaignid=web_share',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/images/project-mandarin.png',
     imageHint: 'language learning mobile app',
   },
   {
@@ -29,7 +29,7 @@ const projectsData = [
     techStack: ['React Native', 'React Native Web', 'Twilio', 'Stripe', 'Google Maps API', 'Firebase'],
     githubUrl: 'https://github.com',
     demoUrl: 'https://play.google.com/store/apps/details?id=com.curbsidemovers.customer&pcampaignid=web_share',
-    imageUrl: 'https://placehold.co/600x400.png',
+    imageUrl: '/images/project-curbside.png',
     imageHint: 'delivery app logistics',
   },
 ];
