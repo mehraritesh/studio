@@ -14,7 +14,7 @@ const experienceData = [
 export function ExperienceSection() {
   return (
     <section id="experience" className="w-full py-12 md:py-24 lg:py-32">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6 animate-fade-in-up">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-primary">Work Experience</h2>
@@ -26,7 +26,7 @@ export function ExperienceSection() {
         <div className="relative mx-auto mt-12 max-w-5xl">
           <div className="absolute left-4 top-0 h-full w-0.5 -translate-x-1/2 transform bg-border md:left-1/2"></div>
           {experienceData.map((exp, index) => (
-            <div key={index} className="mb-8 flex justify-between items-start w-full md:even:flex-row-reverse">
+            <div key={index} className="mb-8 flex justify-between items-start w-full md:even:flex-row-reverse animate-fade-in" style={{ animationDelay: `${index * 200}ms` }}>
                <div className="hidden md:block md:w-5/12"></div>
                <div className="z-10 flex items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full shrink-0">
                 <div className="mx-auto font-semibold text-sm text-primary-foreground">{index + 1}</div>

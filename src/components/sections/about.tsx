@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 export function AboutSection() {
   return (
     <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
-      <div className="container mx-auto px-4 md:px-6">
+      <div className="container mx-auto px-4 md:px-6 animate-fade-in">
         <div className="grid gap-10 lg:grid-cols-2 items-center">
           <div className="flex flex-col justify-center space-y-4 text-center lg:text-left">
             <div className="space-y-2">
@@ -20,7 +20,7 @@ export function AboutSection() {
               </p>
             </div>
           </div>
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center animate-float">
             <Card className="overflow-hidden rounded-full w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 shadow-lg">
               <CardContent className="p-0">
                 <Image

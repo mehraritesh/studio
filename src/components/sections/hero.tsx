@@ -5,7 +5,7 @@ export function HeroSection() {
   return (
     <section id="hero" className="w-full py-24 md:py-32 lg:py-40">
       <div className="container mx-auto text-center px-4 md:px-6">
-        <div className="flex flex-col items-center space-y-4">
+        <div className="flex flex-col items-center space-y-4 animate-fade-in-up">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline text-primary">
               Ritesh Mehra
