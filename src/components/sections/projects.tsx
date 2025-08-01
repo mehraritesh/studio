@@ -1,8 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import Image from 'next/image';
-import { Github, ExternalLink } from 'lucide-react';
+import { Github, ExternalLink, Smartphone, BookOpen, Truck } from 'lucide-react';
 
 const projectsData = [
   {
@@ -11,8 +10,7 @@ const projectsData = [
     techStack: ['Kotlin', 'WebSocket', 'Firebase', 'Google Play Store'],
     githubUrl: 'https://github.com',
     demoUrl: 'https://play.google.com/store/apps/details?id=com.sofmen.trackerapp&pcampaignid=web_share',
-    imageUrl: '/images/project-tracker.png',
-    imageHint: 'mobile tracking app',
+    icon: <Smartphone className="h-10 w-10 text-accent" />,
   },
   {
     title: 'The Mandarin Show – Language Learning App',
@@ -20,8 +18,7 @@ const projectsData = [
     techStack: ['React Native', 'Google/Apple Login', 'ExoPlayer', 'In-App Purchases'],
     githubUrl: 'https://github.com',
     demoUrl: 'https://play.google.com/store/apps/details?id=com.mandarinn.themandarinshow&pcampaignid=web_share',
-    imageUrl: '/images/project-mandarin.png',
-    imageHint: 'language learning mobile app',
+    icon: <BookOpen className="h-10 w-10 text-accent" />,
   },
   {
     title: 'Curbside Movers – Customer & Driver Apps',
@@ -29,8 +26,7 @@ const projectsData = [
     techStack: ['React Native', 'React Native Web', 'Twilio', 'Stripe', 'Google Maps API', 'Firebase'],
     githubUrl: 'https://github.com',
     demoUrl: 'https://play.google.com/store/apps/details?id=com.curbsidemovers.customer&pcampaignid=web_share',
-    imageUrl: '/images/project-curbside.png',
-    imageHint: 'delivery app logistics',
+    icon: <Truck className="h-10 w-10 text-accent" />,
   },
 ];
 
@@ -49,17 +45,8 @@ export function ProjectsSection() {
         <div className="grid gap-8 py-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projectsData.map((project, index) => (
             <Card key={index} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in" style={{ animationDelay: `${index * 200}ms` }}>
-              <CardHeader className="p-0">
-                <Image
-                  src={project.imageUrl}
-                  alt={project.title}
-                  width={600}
-                  height={400}
-                  className="w-full h-48 object-cover"
-                  data-ai-hint={project.imageHint}
-                />
-              </CardHeader>
               <CardContent className="flex flex-col flex-1 p-6">
+                <div className="mb-4">{project.icon}</div>
                 <CardTitle className="mb-2 font-headline">{project.title}</CardTitle>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.techStack.map((tech) => (
