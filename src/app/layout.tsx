@@ -4,7 +4,7 @@ import { Header } from '@/components/header';
 import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
-  title: 'DevFolio Pro',
+  title: 'Ritesh Mehra',
   description: 'A professional developer portfolio.',
 };
 
