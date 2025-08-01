@@ -24,7 +24,7 @@ export function SkillsSection() {
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl gap-8 py-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          <Card className="shadow-lg animate-fade-in">
+          <Card className="shadow-lg animate-fade-in transition-transform duration-300 hover:scale-105">
             <CardHeader className="flex flex-row items-center gap-4">
               <Code className="w-8 h-8 text-accent" />
               <CardTitle className="font-headline">Languages & Frameworks</CardTitle>
@@ -38,7 +38,7 @@ export function SkillsSection() {
               ))}
             </CardContent>
           </Card>
-          <Card className="shadow-lg animate-fade-in" style={{ animationDelay: '200ms' }}>
+          <Card className="shadow-lg animate-fade-in transition-transform duration-300 hover:scale-105" style={{ animationDelay: '200ms' }}>
             <CardHeader className="flex flex-row items-center gap-4">
               <Smartphone className="w-8 h-8 text-accent" />
               <CardTitle className="font-headline">Platforms & State Management</CardTitle>
@@ -52,7 +52,7 @@ export function SkillsSection() {
               ))}
             </CardContent>
           </Card>
-          <Card className="shadow-lg animate-fade-in" style={{ animationDelay: '400ms' }}>
+          <Card className="shadow-lg animate-fade-in transition-transform duration-300 hover:scale-105" style={{ animationDelay: '400ms' }}>
             <CardHeader className="flex flex-row items-center gap-4">
               <Database className="w-8 h-8 text-accent" />
               <CardTitle className="font-headline">Tools & Integrations</CardTitle>

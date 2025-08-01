@@ -44,7 +44,7 @@ export function ProjectsSection() {
         </div>
         <div className="grid gap-8 py-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projectsData.map((project, index) => (
-            <Card key={index} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300 animate-fade-in-up" style={{ animationDelay: `${index * 200}ms` }}>
+            <Card key={index} className="flex flex-col overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 animate-fade-in-up hover:scale-105" style={{ animationDelay: `${index * 200}ms` }}>
               <CardContent className="flex flex-col flex-1 p-6">
                 <div className="mb-4">{project.icon}</div>
                 <CardTitle className="mb-2 font-headline">{project.title}</CardTitle>
