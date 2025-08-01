@@ -24,14 +24,14 @@ export function ExperienceSection() {
           </div>
         </div>
         <div className="relative mx-auto mt-12 max-w-5xl">
-          <div className="absolute left-1/2 top-0 h-full w-0.5 -translate-x-1/2 transform bg-border"></div>
+          <div className="absolute left-4 top-0 h-full w-0.5 -translate-x-1/2 transform bg-border md:left-1/2"></div>
           {experienceData.map((exp, index) => (
-            <div key={index} className={`mb-8 flex justify-between items-center w-full ${index % 2 === 0 ? 'flex-row-reverse' : ''}`}>
-              <div className="order-1 w-5/12"></div>
-              <div className="z-10 flex items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full">
+            <div key={index} className="mb-8 flex justify-between items-start w-full md:even:flex-row-reverse">
+               <div className="hidden md:block md:w-5/12"></div>
+               <div className="z-10 flex items-center order-1 bg-primary shadow-xl w-8 h-8 rounded-full shrink-0">
                 <div className="mx-auto font-semibold text-sm text-primary-foreground">{index + 1}</div>
               </div>
-              <div className="order-1 w-5/12">
+               <div className="order-1 w-full md:w-5/12 ml-4 md:ml-0">
                 <Card className="shadow-lg">
                   <CardHeader>
                     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between">

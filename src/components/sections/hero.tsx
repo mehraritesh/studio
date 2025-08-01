@@ -17,11 +17,11 @@ export function HeroSection() {
               Crafting high-quality, scalable, and user-centric digital experiences.
             </p>
           </div>
-          <div className="space-x-4 pt-4">
-            <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground">
+          <div className="flex flex-col sm:flex-row items-center gap-4 pt-4">
+            <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground w-full sm:w-auto">
               <a href="#projects">View My Work</a>
             </Button>
-            <Button asChild variant="outline" size="lg">
+            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">
               <a href="#contact">
                 Contact Me <ArrowDown className="ml-2 h-4 w-4" />
               </a>

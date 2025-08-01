@@ -3,8 +3,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Smartphone, Database, Code } from 'lucide-react';
 
 const skillsData = {
-  languages: ['JavaScript', 'HTML', 'CSS', 'Java', 'Kotlin'],
+  languages: ['JavaScript', 'HTML', 'CSS'],
   frameworks: ['React Native CLI', 'Expo', 'React.js', 'Redux Toolkit', 'WebSocket.io'],
+  platforms: ['Android (Java/Kotlin)', 'iOS', 'Web'],
   tools: ['Git & GitHub', 'Jenkins', 'TestFlight', 'App Store', 'Google Play Store', 'ChatGPT', 'GitHub Copilot', 'Cursor.AI'],
   integrations: ['REST APIs', 'Stripe', 'Firebase Crashlytics', 'In-app purchases', 'Google Maps API', 'Twilio'],
   stateManagement: ['Redux Toolkit', 'Context API', 'Redux']
@@ -25,7 +26,7 @@ export function SkillsSection() {
         <div className="mx-auto grid max-w-5xl gap-8 py-12 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           <Card className="shadow-lg">
             <CardHeader className="flex flex-row items-center gap-4">
-              <Smartphone className="w-8 h-8 text-accent" />
+              <Code className="w-8 h-8 text-accent" />
               <CardTitle className="font-headline">Languages & Frameworks</CardTitle>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-2">
@@ -39,25 +40,28 @@ export function SkillsSection() {
           </Card>
           <Card className="shadow-lg">
             <CardHeader className="flex flex-row items-center gap-4">
-              <Database className="w-8 h-8 text-accent" />
-              <CardTitle className="font-headline">State Management & Integrations</CardTitle>
+              <Smartphone className="w-8 h-8 text-accent" />
+              <CardTitle className="font-headline">Platforms & State Management</CardTitle>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-2">
-              {skillsData.stateManagement.map((skill) => (
+               {skillsData.platforms.map((skill) => (
                 <Badge key={skill} variant="outline" className="text-sm">{skill}</Badge>
               ))}
-               {skillsData.integrations.map((skill) => (
+              {skillsData.stateManagement.map((skill) => (
                 <Badge key={skill} variant="outline" className="text-sm">{skill}</Badge>
               ))}
             </CardContent>
           </Card>
           <Card className="shadow-lg">
             <CardHeader className="flex flex-row items-center gap-4">
-              <Code className="w-8 h-8 text-accent" />
-              <CardTitle className="font-headline">Tools & Platforms</CardTitle>
+              <Database className="w-8 h-8 text-accent" />
+              <CardTitle className="font-headline">Tools & Integrations</CardTitle>
             </CardHeader>
             <CardContent className="flex flex-wrap gap-2">
               {skillsData.tools.map((skill) => (
+                <Badge key={skill} variant="outline" className="text-sm">{skill}</Badge>
+              ))}
+               {skillsData.integrations.map((skill) => (
                 <Badge key={skill} variant="outline" className="text-sm">{skill}</Badge>
               ))}
             </CardContent>
