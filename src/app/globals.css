@@ -91,6 +91,10 @@
    .animate-float {
     animation: float 3s ease-in-out infinite;
   }
+  .animate-word-by-word {
+    animation: word-by-word 1.5s forwards;
+    opacity: 0;
+  }
 }
 
 @keyframes fade-in {
@@ -122,5 +126,16 @@
   }
   100% {
     transform: translateY(0px);
+  }
+}
+
+@keyframes word-by-word {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
