@@ -3,18 +3,11 @@ import { Badge } from '@/components/ui/badge';
 
 const experienceData = [
   {
-    company: 'Innovate Inc.',
-    title: 'Senior Frontend Developer',
-    years: '2022 - Present',
-    description: 'Lead the development of a large-scale e-commerce platform using React and Next.js. Mentored junior developers and improved code quality through pair programming and code reviews. Implemented a new design system, resulting in a 30% increase in development speed.',
-    skills: ['React', 'Next.js', 'TypeScript', 'GraphQL'],
-  },
-  {
-    company: 'Tech Solutions LLC',
+    company: 'Sofmen Technologies',
     title: 'Software Engineer',
-    years: '2020 - 2022',
-    description: 'Developed and maintained client-facing web applications using React and Redux. Collaborated with cross-functional teams to deliver high-quality software on schedule. Optimized application performance, reducing load times by 40%.',
-    skills: ['React', 'JavaScript', 'Redux', 'REST APIs', 'Jest'],
+    years: 'Jan 2023 – Apr 2025',
+    description: 'Worked on cross-platform mobile and web app development with a focus on performance, scalability, and clean UI/UX. Collaborated within Agile teams, participating in code reviews, and daily stand-ups. Maintained code repositories using Git and managed integration pipelines using Jenkins. Integrated third-party APIs, SDKs, and push notification services using Firebase. Resolved performance bottlenecks and ensured smooth user experiences through effective problem-solving and debugging.',
+    skills: ['React Native', 'Agile', 'Git', 'Jenkins', 'Firebase', 'Unit Testing'],
   },
 ];
 

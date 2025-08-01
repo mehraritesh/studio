@@ -12,7 +12,7 @@ export function ContactSection() {
           </p>
           <div className="flex justify-center space-x-4">
             <Button asChild variant="secondary" size="icon" className="rounded-full">
-              <a href="mailto:example@email.com" aria-label="Email">
+              <a href="mailto:mehraritesh.831@gmail.com" aria-label="Email">
                 <Mail className="h-5 w-5" />
               </a>
             </Button>
@@ -22,14 +22,14 @@ export function ContactSection() {
               </a>
             </Button>
             <Button asChild variant="secondary" size="icon" className="rounded-full">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <a href="https://linkedin.com/in/ritesh-mehra6467a0210" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                 <Linkedin className="h-5 w-5" />
               </a>
             </Button>
           </div>
         </div>
         <div className="mt-12 text-sm text-primary-foreground/60">
-          <p>&copy; {new Date().getFullYear()} DevFolio Pro. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Ritesh Mehra. All rights reserved.</p>
         </div>
       </div>
     </footer>

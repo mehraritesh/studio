@@ -2,10 +2,10 @@ import { Card, CardHeader, CardTitle, CardDescription, CardContent } from '@/com
 
 const educationData = [
   {
-    institution: 'University of Technology',
-    degree: 'Bachelor of Science in Computer Science',
-    years: '2016 - 2020',
-    description: 'Graduated with honors. Focused on software development, algorithms, and data structures. Active member of the coding club and participated in several hackathons.',
+    institution: 'Sagar Institute of Research and Technology, Bhopal, M.P',
+    degree: 'B.Tech – Electronics & Communication Engineering',
+    years: '2021',
+    description: 'Graduated with a focus on electronics and communication. This academic background provided me with a solid foundation in engineering principles that I apply to software development.',
   },
 ];
 
@@ -17,7 +17,7 @@ export function EducationSection() {
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-primary">Education</h2>
             <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              My academic background has provided me with a solid foundation in computer science principles.
+              My academic background has provided me with a solid foundation in engineering principles.
             </p>
           </div>
         </div>

@@ -10,10 +10,10 @@ export function AboutSection() {
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl font-headline text-primary">About Me</h2>
               <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I am a passionate and driven software engineer with a knack for creating elegant, efficient, and user-friendly web applications. With a strong foundation in modern web technologies, I thrive on solving complex problems and continuously learning to stay at the forefront of the ever-evolving tech landscape.
+                I am a Mobile App Developer with 2+ years of hands-on experience in full-cycle development of cross-platform applications using React Native. Skilled in building scalable mobile solutions, integrating RESTful APIs, and implementing responsive UI components.
               </p>
               <p className="max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                When I'm not coding, I enjoy exploring new technologies, contributing to open-source projects, and mentoring aspiring developers.
+                Proficient in mobile architecture, state management, and third-party integrations. Strong background in Agile methodology, team collaboration, and technical problem-solving. Available immediately for both on-site and remote opportunities.
               </p>
             </div>
           </div>

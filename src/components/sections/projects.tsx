@@ -6,31 +6,31 @@ import { Github, ExternalLink } from 'lucide-react';
 
 const projectsData = [
   {
-    title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce site with product listings, a shopping cart, and a secure checkout process, built with Next.js and Stripe.',
-    techStack: ['Next.js', 'React', 'TypeScript', 'Stripe', 'Tailwind CSS'],
+    title: 'Tracker App',
+    description: 'Developed the front end of an employee tracking and attendance management app. Integrated WebSocket for real-time location tracking and built offline functionality with background sync. Added Firebase for push notifications and crash reporting.',
+    techStack: ['Kotlin', 'WebSocket', 'Firebase', 'Google Play Store'],
     githubUrl: 'https://github.com',
     demoUrl: '#',
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'ecommerce website',
+    imageHint: 'mobile tracking app',
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates, user authentication, and a drag-and-drop interface.',
-    techStack: ['React Native', 'Firebase', 'Expo', 'Zustand'],
+    title: 'The Mandarin Show – Language Learning App',
+    description: 'A cross-platform React Native app for Mandarin language learning with secure Google/Apple login. Integrated video playback using ExoPlayer and gated content via in-app purchases (IAP). Emphasized intuitive user experience, and secure access control.',
+    techStack: ['React Native', 'Google/Apple Login', 'ExoPlayer', 'In-App Purchases'],
     githubUrl: 'https://github.com',
     demoUrl: '#',
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'mobile app',
+    imageHint: 'language learning mobile app',
   },
   {
-    title: 'Personal Blog API',
-    description: 'A RESTful API for a personal blog, featuring JWT authentication, post management, and a comment system built with Node.js and Express.',
-    techStack: ['Node.js', 'Express', 'MongoDB', 'JWT', 'Mocha & Chai'],
+    title: 'Curbside Movers – Customer & Driver Apps',
+    description: 'Led development of customer and driver-facing mobile applications. Implemented core features like real-time driver tracking, time slot booking, communication via Twilio, and payment integration via Stripe. Integrated Google Maps API and Firebase services.',
+    techStack: ['React Native', 'React Native Web', 'Twilio', 'Stripe', 'Google Maps API', 'Firebase'],
     githubUrl: 'https://github.com',
     demoUrl: '#',
     imageUrl: 'https://placehold.co/600x400.png',
-    imageHint: 'code api',
+    imageHint: 'delivery app logistics',
   },
 ];
 

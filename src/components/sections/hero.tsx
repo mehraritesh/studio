@@ -8,10 +8,10 @@ export function HeroSection() {
         <div className="flex flex-col items-center space-y-4">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl/none font-headline text-primary">
-              Jane Doe
+              Ritesh Mehra
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
-              Senior Software Engineer | Full-Stack Developer | Tech Enthusiast
+              React Native Developer | Mobile App Developer
             </p>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
               Crafting high-quality, scalable, and user-centric digital experiences.
