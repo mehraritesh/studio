@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Download } from 'lucide-react';
 
 const AnimatedText = ({ text, delay }: { text: string; delay: number }) => {
   return (
@@ -36,6 +36,11 @@ export function HeroSection() {
           <div className="flex flex-col sm:flex-row items-center gap-4 pt-4 animate-fade-in-up" style={{ animationDelay: '1000ms' }}>
             <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground w-full sm:w-auto">
               <a href="#projects">View My Work</a>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">
+              <a href="/Ritesh-Mehra-Resume.pdf" download>
+                Download Resume <Download className="ml-2 h-4 w-4" />
+              </a>
             </Button>
             <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">
               <a href="#contact">
