@@ -38,7 +38,7 @@ export function HeroSection() {
               <a href="#projects">View My Work</a>
             </Button>
             <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">
-              <a href="/Ritesh-Mehra-Resume.pdf" download>
+              <a href="/Ritesh-Mehra-Resume.pdf" download target="_blank" rel="noopener noreferrer">
                 Download Resume <Download className="ml-2 h-4 w-4" />
               </a>
             </Button>
